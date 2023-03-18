@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD operation</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <h2>Crud</h2>
+        </div>
+        <div class="options">
+            <h3>Home</h3>
+            <h3>About</h3>
+            <h3>Contact</h3>
+        </div>
+
+    </div>
+    <h2> Data </h2>
+    <button onclick="userdisplay()">Fetch Users</button>
+    <div class="mainflex">
+
+        <div class="tablediv">
+            <table>
+                <thead>
+                    <tr>
+                        <th>
+                            ID
+                        </th>
+                        <th>
+                            Avatar
+                        </th>
+                        <th>
+                            FName
+                        </th>
+                        <th>
+                            Lname
+                        </th>
+                        <th>
+                            Email
+                        </th>
+                        <th>
+                            Action
+                        </th>
+                    </tr>
+                </thead>
+                <tbody id="content">
+
+                    <tr>
+                        <td>Loading...</td>
+                    </tr>
+
+
+                </tbody>
+
+
+            </table>
+
+        </div>
+
+        <div id="form" class="form">
+            <h3>Enter new data</h3>
+
+            <form id="formid" onsubmit="handlesubmit(event)">
+                <label for= " userid">UserId:</label><br>
+                <input type="text" id="userid" name="userid"><br>
+                <label for= " fname">First name:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname"><br>
+                <label for="lname">Email</label><br>
+                <input type="text" id="email" name="email"><br>
+                <label for="lname">Avatar</label><br>
+                <input type="text" id="Avatar" name="Avatar"><br>
+                <input type="submit"><br>
+
+            </form>
+        </div>
+
+        <!-- https://ibb.co/8XV8Sbk -->
+
+
+
+
+
+
+        <script src="script.js"></script>
+        <script src="dom.js"></script>
+    </div>
+
+</body>
+
+</html>

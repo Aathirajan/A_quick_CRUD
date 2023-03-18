@@ -1,0 +1,80 @@
+body{
+    
+    margin:0px;
+}
+h3{
+    margin-left:50px;
+    margin-right:50px;
+}
+h3:hover{
+    cursor: pointer;
+}
+.navbar{
+    width:100%;
+    height:60px;
+    padding:10px;
+    background-color: rgb(14, 1, 69);
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+}
+.logo{
+    display:block;
+    margin-left:20px;
+}
+.options{
+    margin-left:300px;
+    display:flex;
+    
+    flex-direction:row;
+  
+    justify-content: flex-end;
+}
+.mainflex{
+    display:flex;
+    flex-direction:row;
+   margin-top:100px;
+   margin-left:25px;
+}
+button{
+    padding:10px;
+    background-color:black;
+    color:white;
+    border-radius:5px;
+}
+
+.tablediv{
+    display:flex;
+    flex-direction:row;
+
+}
+img{
+    width:40px;
+    height:40px;
+}
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    
+  }
+  td{
+    margin:50px;
+  }
+  th{
+    margin:50px;
+  }
+  .form{
+    height:400px;
+   margin-left:150px;
+   padding:50px;
+   border:1px solid grey
+  }
+  #btn{
+    width:300px;
+    height:300px;
+  }
+
+  #userid{
+    display:none;
+  }
